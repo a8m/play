@@ -7,14 +7,18 @@ Play something while you're waiting.
 </p>
 
 
-# Installation
+## Installation
 
 ```
 go get -u github.com/a8m/play
 ```
 
-# Usage
+## Usage
 
 ```
 $ play program arg1 arg2...
 ```
+
+## Add more games
+- [ ] Chrome's dinosaur
+- [ ] Snake
