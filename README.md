@@ -1,6 +1,11 @@
 # play
 
 Play something while you're waiting.
+<p align="center">
+  <img 
+    src="gif/demo.gif" alt="play demo">
+</p>
+
 
 # Installation
 
