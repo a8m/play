@@ -1,6 +1,6 @@
 # play
 
-Play something while you're waiting.
+Play something while you're waiting for some command to finish.
 <p align="center">
   <img 
     src="gif/demo.gif" alt="play demo">
