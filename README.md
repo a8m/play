@@ -2,8 +2,8 @@
 
 Play something while waiting for your command to finish.
 
-Sometimes, you run a program that takes a few seconds (or minute), and you don't really want to do other things while it's running. so instead of sitting there and staring at the screen, play something. 
-how do you do it? just prefix your command with `play`.
+Sometimes, you run a program that takes a few seconds (or minute), and you don't really want to do other things while it's running. so instead of sitting there and staring at the screen, play something.   
+__How do you do it?__ _just prefix your command with `play`_.
 
 
 <p align="center">
