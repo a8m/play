@@ -22,21 +22,20 @@ func main() {
 	cmd := exec.Command(os.Args[1], os.Args[2:]...)
 	cmd.Env = os.Environ()
 
-	r1, err := cmd.StdoutPipe()
+	r, w, err := os.Pipe()
 	failOnErr(err)
-	r2, err := cmd.StderrPipe()
-	failOnErr(err)
+	cmd.Stdout = w
 
 	done := make(chan bool, 1)
 	rand.Seed(time.Now().UnixNano())
 	failOnErr(termbox.Init())
 
-	go func() { failOnErr(cmd.Run()); done <- true }()
 	go func() { tetris.NewGame().Start(); done <- true }()
+	go func() { failOnErr(cmd.Run()); w.Close(); done <- true }()
 
 	<-done
 	termbox.Close()
-	io.Copy(os.Stdout, io.MultiReader(r1, r2))
+	io.Copy(os.Stdout, r)
 }
 
 const usageText = `Usage: play <program> [args...]`
