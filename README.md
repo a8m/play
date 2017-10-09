@@ -28,4 +28,4 @@ $ play program arg1 arg2...
 - [ ] More games, like: Chrome's dinosaur, Snake
 - [ ] Twitter, and news
 - [ ] Small math and CS puzzles
-- [ ] Read blog posts, and papers.
+- [ ] Read blog posts, and papers
