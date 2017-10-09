@@ -25,6 +25,7 @@ func main() {
 	r, w, err := os.Pipe()
 	failOnErr(err)
 	cmd.Stdout = w
+	cmd.Stderr = w
 
 	done := make(chan bool, 1)
 	rand.Seed(time.Now().UnixNano())
