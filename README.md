@@ -2,12 +2,12 @@
 
 Play something while waiting for your command to finish.
 
-Sometimes, you run a program that takes a few seconds (or minute), and you don't really want to do other things while it's running. so instead of sitting there and staring at the screen, play something.   
+Sometimes, you run a program that takes a few seconds (or minute), and you don't really want to do other things while it's running. so instead of sitting there and staring at the screen, play something.
 __How do you do it?__ _just prefix your command with `play`_.
 
 
 <p align="center">
-  <img 
+  <img
     src="gif/demo.gif" alt="play demo">
 </p>
 
@@ -24,6 +24,8 @@ go get -u github.com/a8m/play
 $ play program arg1 arg2...
 ```
 
-## Add more games
-- [ ] Chrome's dinosaur
-- [ ] Snake
+## Things I wanna add
+- [ ] More games, like: Chrome's dinosaur, Snake
+- [ ] Twitter, and news
+- [ ] Small math and CS puzzles
+- [ ] Read blog posts, and papers.
