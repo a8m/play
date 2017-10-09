@@ -31,8 +31,16 @@ func main() {
 	rand.Seed(time.Now().UnixNano())
 	failOnErr(termbox.Init())
 
-	go func() { tetris.NewGame().Start(); done <- true }()
-	go func() { failOnErr(cmd.Run()); w.Close(); done <- true }()
+	go func() {
+		tetris.NewGame().Start()
+		done <- true
+	}()
+
+	go func() {
+		failOnErr(cmd.Run())
+		w.Close()
+		done <- true
+	}()
 
 	<-done
 	termbox.Close()
