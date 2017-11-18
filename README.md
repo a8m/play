@@ -25,7 +25,7 @@ $ play program arg1 arg2...
 ```
 
 ## Things I wanna add
-- [ ] More games, like: Chrome's dinosaur, Snake
+- [ ] More games, like: Chrome's dinosaur
 - [ ] Twitter, and news
 - [ ] Small math and CS puzzles
 - [ ] Read blog posts, and papers

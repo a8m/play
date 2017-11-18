@@ -10,8 +10,17 @@ import (
 	"time"
 
 	"github.com/cespare/go-tetris/tetris"
+	"github.com/ensky/snake-game/snake"
 	"github.com/nsf/termbox-go"
 )
+
+// games holds all available games in play.
+var games = []interface {
+	Start()
+}{
+	snake.NewGame(),
+	tetris.NewGame(),
+}
 
 func main() {
 	if len(os.Args) < 2 {
@@ -32,7 +41,7 @@ func main() {
 	failOnErr(termbox.Init())
 
 	go func() {
-		tetris.NewGame().Start()
+		games[rand.Intn(len(games))].Start()
 		done <- true
 	}()
 
