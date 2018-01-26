@@ -52,7 +52,7 @@ func main() {
 	}()
 
 	<-done
-	termbox.Close()
+	defer termbox.Close()
 	io.Copy(os.Stdout, r)
 }
 
